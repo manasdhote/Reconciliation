@@ -11,7 +11,7 @@
 
 **Reconcile.IO** is an enterprise-grade, high-throughput **Transaction Reconciliation Engine** engineered in **TypeScript** using **Node.js**, **Express**, and **MongoDB**. Designed to ingest, normalize, and reconcile massive crypto-transaction datasets from multiple external sources (e.g., user-exported CSV ledger data vs. exchange-generated transaction receipts), it guarantees high data integrity, strict auditability, and sub-linear processing speeds.
 
-The application includes a beautiful, premium **Dark Mode Verification Dashboard** built with **React 19** and **Vite** for triggering runs, visualizing match summaries, monitoring processing speeds, and auditing data quality in real time.
+The application includes a beautiful, premium **Verification Dashboard** built with **React 19** and **Vite** for triggering runs, visualizing match summaries, monitoring processing speeds, and auditing data quality in real time.
 
 ---
 
@@ -50,7 +50,7 @@ graph TD
     
     %% Reports
     N -->|Matched / Conflicting / Unmatched| O[(MongoDB: reconciliationreports)]:::storage;
-    O -->|Telemetry, Stats & CSV Export| P(React 19 Dark Mode Dashboard);
+    O -->|Telemetry, Stats & CSV Export| P(React 19 Dashboard);
     
     class B,G,H,K,L,M primary;
     class P secondary;
